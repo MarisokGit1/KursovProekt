@@ -18,9 +18,10 @@ namespace LibraryWinforms.Data
         }
         public LibraryDbContext()
         {
-          /*  this.Database.Migrate();*/
+       /* this.Database.Migrate();*/
         }
         public DbSet<Book> books { get; set; }
         public DbSet<Client> clients { get; set; }
+        public DbSet<BorrowedBooks> BorrowedBooks { get; set; }
     }
 }
