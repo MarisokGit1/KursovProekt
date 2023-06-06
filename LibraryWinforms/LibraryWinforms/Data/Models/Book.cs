@@ -8,9 +8,9 @@ namespace LibraryWinforms.Data.Models
 {
     public class Book
     {
-        public Book(int id, string name, string author, DateTime firstEdition, string genre)
+        public Book(string name, string author, DateTime firstEdition, string genre)
         {
-            Id = id;
+           
             Name = name;
             Author = author;
             FirstEdition = firstEdition;
@@ -22,5 +22,6 @@ namespace LibraryWinforms.Data.Models
         public string Author { get; set; }
         public DateTime FirstEdition { get; set; }
         public string Genre { get; set; }
+        public virtual ICollection<BorrowedBooks> BorrowedBooks { get; set; }
     }
 }

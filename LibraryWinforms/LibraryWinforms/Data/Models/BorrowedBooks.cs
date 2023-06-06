@@ -9,8 +9,10 @@ namespace LibraryWinforms.Data.Models
     public class BorrowedBooks
     {
         public int Id { get; set; }
-        public Book book { get; set; }
-        public Client client { get; set; }
+        public int BookId { get; set; }
+        public int ClientId { get; set; }   
+        public virtual Book book { get; set; }
+        public virtual Client client { get; set; }
      
 
     }

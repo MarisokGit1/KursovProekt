@@ -30,16 +30,21 @@ namespace LibraryWinforms
             LibraryDbContext db = new LibraryDbContext();
             string name = textBox1.Text;
             string author = textBox2.Text;
-            DateTime date = DateTime.Now;
+            string date = textBox3.Text;
+            DateTime dateTime = DateTime.Parse(date);    
             string genre = textBox4.Text;
-            int id = 0;
- 
-            Book book = new Book(id++,name,author,date,genre);
+            Book book = new Book(name,author,dateTime,genre);
             db.books.Add(book);
+            db.SaveChanges();
             MessageBox.Show("Your book was successfully added!");
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
