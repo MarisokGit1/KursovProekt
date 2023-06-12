@@ -29,7 +29,7 @@ namespace LibraryWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-              RegisterBook regbook = new RegisterBook();
+            RegisterBook regbook = new RegisterBook();
             regbook.Show();
         }
 
@@ -47,6 +47,17 @@ namespace LibraryWinforms
         private void MainMenu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+CreateAClient create = new CreateAClient();
+        create.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MainMenu.
         }
     }
 }

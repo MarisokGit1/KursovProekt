@@ -38,6 +38,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -121,12 +123,22 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "When was your book firstly released";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LibraryWinforms.Properties.Resources.hqdefault1;
+            this.pictureBox1.Location = new System.Drawing.Point(192, 120);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(435, 318);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // RegisterBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox4);
@@ -140,6 +152,7 @@
             this.Name = "RegisterBook";
             this.Text = "Register a book";
             this.Load += new System.EventHandler(this.RegisterBook_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +169,6 @@
         private TextBox textBox4;
         private TextBox textBox3;
         private Label label3;
+        private PictureBox pictureBox1;
     }
 }
