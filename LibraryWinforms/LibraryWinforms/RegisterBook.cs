@@ -34,7 +34,7 @@ namespace LibraryWinforms
             DateTime dateTime = DateTime.Parse(date);
             string genre = textBox4.Text;
             Book book = new Book(name, author, dateTime, genre);
-            db.books.Add(book);
+            db.Books.Add(book);
             db.SaveChanges();
             MessageBox.Show("Your book was successfully added!");
         }

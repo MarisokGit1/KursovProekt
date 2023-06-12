@@ -47,7 +47,8 @@ namespace LibraryWinforms
         private void IssueBook_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Server=.; Database=LibraryDb; " +
+            con.ConnectionString = /*"Server=.; Database=LibraryDb; " +
+                "Integrated Security=true"*/"Server=DESKTOP-477NN03\\SQLEXPRESS; Database=LibraryDb; " +
                 "Integrated Security=true";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
@@ -56,7 +57,7 @@ namespace LibraryWinforms
             cmd = new SqlCommand("select Name from books", con);
             SqlDataReader sdr = cmd.ExecuteReader();
 
-            while (sdr.Read()) 
+            while (sdr.Read())
             {
                 for (int i = 0; i < sdr.FieldCount; i++)
                 {

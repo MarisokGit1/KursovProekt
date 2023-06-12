@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LibraryWinforms.Migrations
 {
-    public partial class librarymigration : Migration
+    public partial class librarymig : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "books",
+                name: "Books",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -22,11 +22,11 @@ namespace LibraryWinforms.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_books", x => x.Id);
+                    table.PrimaryKey("PK_Books", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "clients",
+                name: "Clients",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -34,12 +34,13 @@ namespace LibraryWinforms.Migrations
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<int>(type: "int", nullable: false),
                     Age = table.Column<int>(type: "int", nullable: false),
-                    Password = table.Column<int>(type: "int", nullable: false)
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_clients", x => x.Id);
+                    table.PrimaryKey("PK_Clients", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -55,15 +56,15 @@ namespace LibraryWinforms.Migrations
                 {
                     table.PrimaryKey("PK_BorrowedBooks", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_BorrowedBooks_books_BookId",
+                        name: "FK_BorrowedBooks_Books_BookId",
                         column: x => x.BookId,
-                        principalTable: "books",
+                        principalTable: "Books",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_BorrowedBooks_clients_ClientId",
+                        name: "FK_BorrowedBooks_Clients_ClientId",
                         column: x => x.ClientId,
-                        principalTable: "clients",
+                        principalTable: "Clients",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -85,10 +86,10 @@ namespace LibraryWinforms.Migrations
                 name: "BorrowedBooks");
 
             migrationBuilder.DropTable(
-                name: "books");
+                name: "Books");
 
             migrationBuilder.DropTable(
-                name: "clients");
+                name: "Clients");
         }
     }
 }

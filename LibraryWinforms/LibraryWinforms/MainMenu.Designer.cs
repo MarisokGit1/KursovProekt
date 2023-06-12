@@ -29,125 +29,125 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            button1 = new Button();
+            button4 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button5 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::LibraryWinforms.Properties.Resources.download1;
-            this.pictureBox1.Location = new System.Drawing.Point(39, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 125);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.download1;
+            pictureBox1.Location = new Point(39, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(135, 125);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(490, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 35);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Welcome to Marin\'s Library ";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            label1.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.Location = new Point(490, 102);
+            label1.Name = "label1";
+            label1.Size = new Size(366, 35);
+            label1.TabIndex = 1;
+            label1.Text = "Welcome to Marin's Library ";
+            label1.Click += label1_Click_1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(552, 162);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(245, 27);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "State your business here";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            label2.AutoSize = true;
+            label2.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(552, 162);
+            label2.Name = "label2";
+            label2.Size = new Size(245, 27);
+            label2.TabIndex = 2;
+            label2.Text = "State your business here";
+            label2.Click += label2_Click;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(642, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 62);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Register a book";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button1.Location = new Point(642, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(211, 62);
+            button1.TabIndex = 3;
+            button1.Text = "Register a book";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(425, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(211, 62);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Issue a book";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button4.Location = new Point(425, 12);
+            button4.Name = "button4";
+            button4.Size = new Size(211, 62);
+            button4.TabIndex = 6;
+            button4.Text = "Issue a book";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(859, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 62);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Return a book";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button2.Location = new Point(859, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(211, 62);
+            button2.TabIndex = 7;
+            button2.Text = "Return a book";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(208, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(211, 62);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Create client";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button3.Location = new Point(208, 12);
+            button3.Name = "button3";
+            button3.Size = new Size(211, 62);
+            button3.TabIndex = 8;
+            button3.Text = "Create client";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(1088, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(211, 62);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Turn off";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button5.Location = new Point(1088, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(211, 62);
+            button5.TabIndex = 9;
+            button5.Text = "Turn off";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // MainMenu
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(1443, 671);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("Segoe Print", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MainMenu";
-            this.Text = "Library";
-            this.Load += new System.EventHandler(this.MainMenu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.RosyBrown;
+            ClientSize = new Size(1366, 671);
+            Controls.Add(button5);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button4);
+            Controls.Add(button1);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Font = new Font("Segoe Print", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "MainMenu";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Library";
+            Load += MainMenu_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

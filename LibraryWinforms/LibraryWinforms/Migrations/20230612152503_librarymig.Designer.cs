@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryWinforms.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    [Migration("20230606093554_librarymigration")]
-    partial class librarymigration
+    [Migration("20230612152503_librarymig")]
+    partial class librarymig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -49,7 +49,7 @@ namespace LibraryWinforms.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("books");
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("LibraryWinforms.Data.Models.BorrowedBooks", b =>
@@ -98,12 +98,16 @@ namespace LibraryWinforms.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Password")
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PhoneNumber")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("clients");
+                    b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("LibraryWinforms.Data.Models.BorrowedBooks", b =>
