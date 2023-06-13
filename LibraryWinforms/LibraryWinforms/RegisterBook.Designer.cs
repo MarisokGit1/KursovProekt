@@ -29,133 +29,132 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterBook));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            label4 = new Label();
+            button1 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox4 = new TextBox();
+            textBox3 = new TextBox();
+            label3 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(70, 26);
+            label1.TabIndex = 0;
+            label1.Text = "Name";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(216, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 26);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Author";
+            label2.AutoSize = true;
+            label2.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(216, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(78, 26);
+            label2.TabIndex = 1;
+            label2.Text = "Author";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(428, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 26);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Genre";
+            label4.AutoSize = true;
+            label4.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label4.Location = new Point(428, 6);
+            label4.Name = "label4";
+            label4.Size = new Size(71, 26);
+            label4.TabIndex = 3;
+            label4.Text = "Genre";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(664, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 63);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Register Book!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button1.Location = new Point(664, 6);
+            button1.Name = "button1";
+            button1.Size = new Size(124, 63);
+            button1.TabIndex = 4;
+            button1.Text = "Register Book!";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 23);
-            this.textBox1.TabIndex = 5;
+            textBox1.Location = new Point(88, 9);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(122, 23);
+            textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(300, 9);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(122, 23);
-            this.textBox2.TabIndex = 6;
+            textBox2.Location = new Point(300, 9);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(122, 23);
+            textBox2.TabIndex = 6;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(505, 9);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(122, 23);
-            this.textBox4.TabIndex = 8;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            textBox4.Location = new Point(505, 9);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(122, 23);
+            textBox4.TabIndex = 8;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(388, 60);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(122, 23);
-            this.textBox3.TabIndex = 10;
+            textBox3.Location = new Point(388, 60);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(122, 23);
+            textBox3.TabIndex = 10;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(12, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(370, 26);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "When was your book firstly released";
+            label3.AutoSize = true;
+            label3.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.Location = new Point(12, 60);
+            label3.Name = "label3";
+            label3.Size = new Size(370, 26);
+            label3.TabIndex = 9;
+            label3.Text = "When was your book firstly released";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::LibraryWinforms.Properties.Resources.hqdefault1;
-            this.pictureBox1.Location = new System.Drawing.Point(192, 120);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(435, 318);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.hqdefault1;
+            pictureBox1.Location = new Point(192, 120);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(435, 318);
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
             // 
             // RegisterBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "RegisterBook";
-            this.Text = "Register a book";
-            this.Load += new System.EventHandler(this.RegisterBook_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(884, 561);
+            Controls.Add(pictureBox1);
+            Controls.Add(textBox3);
+            Controls.Add(label3);
+            Controls.Add(textBox4);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Controls.Add(label4);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "RegisterBook";
+            Text = "Register a book";
+            Load += RegisterBook_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

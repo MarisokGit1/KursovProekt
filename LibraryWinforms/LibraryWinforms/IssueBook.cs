@@ -41,7 +41,7 @@ namespace LibraryWinforms
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-        
+
         }
 
         private void IssueBook_Load(object sender, EventArgs e)
@@ -64,6 +64,11 @@ namespace LibraryWinforms
                     comboBox1.Items.Add(sdr.GetString(i));
                 }
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

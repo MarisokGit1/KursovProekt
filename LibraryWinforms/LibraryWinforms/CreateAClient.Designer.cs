@@ -51,7 +51,7 @@
             // 
             button2.Font = new Font("Segoe UI Historic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ControlText;
-            button2.Location = new Point(538, 344);
+            button2.Location = new Point(496, 179);
             button2.Name = "button2";
             button2.Size = new Size(107, 66);
             button2.TabIndex = 1;
@@ -175,7 +175,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.fun;
-            pictureBox1.Location = new Point(489, 154);
+            pictureBox1.Location = new Point(507, 15);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(217, 122);
             pictureBox1.TabIndex = 14;
@@ -185,7 +185,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(444, 299);
+            label7.Location = new Point(469, 140);
             label7.Name = "label7";
             label7.Size = new Size(311, 30);
             label7.TabIndex = 15;
@@ -196,7 +196,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1084, 461);
             Controls.Add(label7);
             Controls.Add(pictureBox1);
             Controls.Add(textBox6);

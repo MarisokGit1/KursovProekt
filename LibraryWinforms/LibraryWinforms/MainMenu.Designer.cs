@@ -129,7 +129,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.RosyBrown;
-            ClientSize = new Size(1366, 671);
+            ClientSize = new Size(1320, 557);
             Controls.Add(button5);
             Controls.Add(button3);
             Controls.Add(button2);
