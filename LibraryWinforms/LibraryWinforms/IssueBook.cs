@@ -1,4 +1,5 @@
 ﻿using LibraryWinforms.Data;
+using LibraryWinforms.Data.Models;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,9 @@ namespace LibraryWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int bookid = 0;
+            int clientid = 0;
+            BorrowedBooks borrowedBook = new BorrowedBooks(bookid,clientid);
 
         }
 
@@ -47,14 +51,15 @@ namespace LibraryWinforms
         private void IssueBook_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = /*"Server=.; Database=LibraryDb; " +
-                "Integrated Security=true"*/"Server=DESKTOP-477NN03\\SQLEXPRESS; Database=LibraryDb; " +
-                "Integrated Security=true";
+            con.ConnectionString = "server=.; database=LibraryDb; " +
+                "integrated security=True"
+                /*"Server=DESKTOP-477NN03\\SQLEXPRESS; Database=LibraryDb; " +
+                "Integrated Security=true"*/;
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             con.Open();
 
-            cmd = new SqlCommand("select Name from books", con);
+            cmd = new SqlCommand("select bName from Books", con);
             SqlDataReader sdr = cmd.ExecuteReader();
 
             while (sdr.Read())
@@ -64,9 +69,21 @@ namespace LibraryWinforms
                     comboBox1.Items.Add(sdr.GetString(i));
                 }
             }
+            sdr.Close();
+            con.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IssueBook_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }

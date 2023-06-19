@@ -13,9 +13,10 @@ namespace LibraryWinforms.Data
         protected override void OnConfiguring(DbContextOptionsBuilder
             optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(/*"Server=.; Database=LibraryDb; " +
-                "Integrated Security=true"*/"Server=DESKTOP-477NN03\\SQLEXPRESS; Database=LibraryDb; " +
-                "Integrated Security=true");
+            optionsBuilder.UseSqlServer("Server=.; Database=LibraryDb; " +
+                "Integrated Security=true"
+                /*"Server=DESKTOP-477NN03\\SQLEXPRESS; Database=LibraryDb; " +
+                "Integrated Security=true"*/);
         }
         public LibraryDbContext()
         {

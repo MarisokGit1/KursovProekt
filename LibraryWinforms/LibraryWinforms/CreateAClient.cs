@@ -59,5 +59,15 @@ namespace LibraryWinforms
             MessageBox.Show("The client was succsesfully added!");
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateAClient_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

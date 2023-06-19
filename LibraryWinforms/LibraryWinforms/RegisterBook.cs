@@ -48,5 +48,10 @@ namespace LibraryWinforms
         {
 
         }
+
+        private void RegisterBook_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
