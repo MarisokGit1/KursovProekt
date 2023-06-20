@@ -28,11 +28,12 @@ namespace LibraryWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*LibraryBusiness libraryBusiness = new LibraryBusiness();
+           /* LibraryBusiness libraryBusiness = new LibraryBusiness();
+            string bookname;
             int bookid = 0;
             int clientid = 0;
             DateTime borrowedOn = DateTime.Now;
-            BorrowedBooks borrowedBook = new BorrowedBooks(bookid,borrowedOn,clientid);
+            BorrowedBooks borrowedBook = new BorrowedBooks(bookid, borrowedOn, clientid);
             libraryBusiness.IssueBook(borrowedBook);*/
         }
 
@@ -54,26 +55,26 @@ namespace LibraryWinforms
         private void IssueBook_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Server=DESKTOP-U5DN71B; Database=LibraryData; " +
-                "Integrated Security=True"
-                /*"Server=DESKTOP-477NN03\\SQLEXPRESS; Database=LibraryDb; " +
-                "Integrated Security=true"*/;
+            con.ConnectionString = "server=.; database=Library; integrated security=True";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             con.Open();
 
-            cmd = new SqlCommand("select bName from Books", con);
-            SqlDataReader sdr = cmd.ExecuteReader();
+            cmd = new SqlCommand("Select Name from Books", con);
+            SqlDataReader Sdr = cmd.ExecuteReader();
 
-            while (sdr.Read())
+            while (Sdr.Read())
             {
-                for (int i = 0; i < sdr.FieldCount; i++)
+                for (int i = 0; i < Sdr.FieldCount; i++)
                 {
-                    comboBox1.Items.Add(sdr.GetString(i));
+                    comboBox1.Items.Add(Sdr.GetString(i));
                 }
             }
-            sdr.Close();
+            Sdr.Close();
             con.Close();
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
