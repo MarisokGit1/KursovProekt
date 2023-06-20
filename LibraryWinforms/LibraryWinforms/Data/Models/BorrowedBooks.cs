@@ -11,7 +11,7 @@ namespace LibraryWinforms.Data.Models
         public BorrowedBooks(int bookId, DateTime borrowedOn, int clientId)
         {
             BookId = bookId;
-            this.BorrowedOn = borrowedOn;
+            BorrowedOn = borrowedOn;
             ClientId = clientId;
         }
 
@@ -19,8 +19,8 @@ namespace LibraryWinforms.Data.Models
         public int BookId { get; set; }
         public DateTime BorrowedOn { get; set; }
         public int ClientId { get; set; }   
-        public virtual Book book { get; set; }
-        public virtual Client client { get; set; }
+        public virtual Book Book { get; set; }
+        public virtual Client Client { get; set; }
      
 
     }

@@ -13,14 +13,12 @@ namespace LibraryWinforms.Data
         protected override void OnConfiguring(DbContextOptionsBuilder
             optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.; Database=LibraryDb; " +
-                "Integrated Security=true"
-                /*"Server=DESKTOP-477NN03\\SQLEXPRESS; Database=LibraryDb; " +
-                "Integrated Security=true"*/);
+            optionsBuilder.UseSqlServer("Server=.; Database=Library; " +
+                "Integrated Security=true; TrustServerCertificate=true;");
         }
         public LibraryDbContext()
         {
-            this.Database.Migrate();
+           this.Database.EnsureCreated();
         }
         public DbSet<Book> Books { get; set; }
         public DbSet<Client> Clients { get; set; }

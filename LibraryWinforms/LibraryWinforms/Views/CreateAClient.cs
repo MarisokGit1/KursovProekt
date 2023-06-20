@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibraryWinforms.Business;
 
 namespace LibraryWinforms
 {
@@ -46,7 +47,7 @@ namespace LibraryWinforms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LibraryDbContext db = new LibraryDbContext();
+            LibraryBusiness libraryBusiness = new LibraryBusiness();
             string firstName = textBox1.Text;
             string lastName = textBox2.Text;
             string email = textBox3.Text;
@@ -54,8 +55,7 @@ namespace LibraryWinforms
             int age = int.Parse(textBox5.Text);
             var password = textBox6.Text;
             Client client = new Client(firstName, lastName, email, phoneNum, age, password);
-            db.Clients.Add(client);
-            db.SaveChanges();
+            libraryBusiness.AddClient(client);
             MessageBox.Show("The client was succsesfully added!");
 
         }

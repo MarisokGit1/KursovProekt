@@ -1,4 +1,5 @@
-﻿using LibraryWinforms.Data;
+﻿using LibraryWinforms.Business;
+using LibraryWinforms.Data;
 using LibraryWinforms.Data.Models;
 using System;
 using System.Collections.Generic;
@@ -27,15 +28,15 @@ namespace LibraryWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LibraryDbContext db = new LibraryDbContext();
+            LibraryBusiness libraryBusiness = new LibraryBusiness();
+            
             string name = textBox1.Text;
             string author = textBox2.Text;
             string date = textBox3.Text;
             DateTime dateTime = DateTime.Parse(date);
             string genre = textBox4.Text;
             Book book = new Book(name, author, dateTime, genre);
-            db.Books.Add(book);
-            db.SaveChanges();
+            libraryBusiness.RegisterBook(book);
             MessageBox.Show("Your book was successfully added!");
         }
 
@@ -50,6 +51,11 @@ namespace LibraryWinforms
         }
 
         private void RegisterBook_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,4 +1,5 @@
-﻿using LibraryWinforms.Data;
+﻿using LibraryWinforms.Business;
+using LibraryWinforms.Data;
 using LibraryWinforms.Data.Models;
 using Microsoft.Data.SqlClient;
 using System;
@@ -27,10 +28,12 @@ namespace LibraryWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*LibraryBusiness libraryBusiness = new LibraryBusiness();
             int bookid = 0;
             int clientid = 0;
-            BorrowedBooks borrowedBook = new BorrowedBooks(bookid,clientid);
-
+            DateTime borrowedOn = DateTime.Now;
+            BorrowedBooks borrowedBook = new BorrowedBooks(bookid,borrowedOn,clientid);
+            libraryBusiness.IssueBook(borrowedBook);*/
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -51,8 +54,8 @@ namespace LibraryWinforms
         private void IssueBook_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "server=.; database=LibraryDb; " +
-                "integrated security=True"
+            con.ConnectionString = "Server=DESKTOP-U5DN71B; Database=LibraryData; " +
+                "Integrated Security=True"
                 /*"Server=DESKTOP-477NN03\\SQLEXPRESS; Database=LibraryDb; " +
                 "Integrated Security=true"*/;
             SqlCommand cmd = new SqlCommand();
