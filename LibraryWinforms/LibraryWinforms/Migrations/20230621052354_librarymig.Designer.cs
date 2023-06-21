@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryWinforms.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    [Migration("20230620102335_librarymig")]
+    [Migration("20230621052354_librarymig")]
     partial class librarymig
     {
         /// <inheritdoc />

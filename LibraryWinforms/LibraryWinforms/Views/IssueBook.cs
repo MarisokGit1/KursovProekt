@@ -19,6 +19,16 @@ namespace LibraryWinforms
         public IssueBook()
         {
             InitializeComponent();
+            string[] books;
+            using (var db = new LibraryDbContext())
+            {
+                books = db.Books.Select(b => b.Name).ToArray();
+            }
+            foreach (var name in books)
+            {
+                comboBox1.Items.Add(name);
+            }
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -28,13 +38,34 @@ namespace LibraryWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* LibraryBusiness libraryBusiness = new LibraryBusiness();
-            string bookname;
+            
+            LibraryBusiness libraryBusiness = new LibraryBusiness();
             int bookid = 0;
-            int clientid = 0;
+            string givenName = comboBox1.Text;
+            using (var db = new LibraryDbContext())
+            {
+                //var books = from b in db.Books
+                //            where b.Name.Equals(givenName)
+                //            select b;
+                          //  bookid = db.Books.FirstOrDefault(b => b.Name==givenName).Id;
+                            bookid = db.Books.FirstOrDefault(b => b.Name==givenName).Id;
+               
+            }
+                
+
+            int clientId = 0;
+            string firstName = textBox3.Text;
+            using (var db = new LibraryDbContext())
+            {
+
+                clientId = db.Clients.FirstOrDefault(b => b.FirstName == firstName).Id;
+
+            }
             DateTime borrowedOn = DateTime.Now;
-            BorrowedBooks borrowedBook = new BorrowedBooks(bookid, borrowedOn, clientid);
-            libraryBusiness.IssueBook(borrowedBook);*/
+            BorrowedBooks borrowedBook = new BorrowedBooks(bookid, borrowedOn, clientId);
+            libraryBusiness.IssueBook(borrowedBook);
+            MessageBox.Show("You got the book!!");
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -54,24 +85,26 @@ namespace LibraryWinforms
 
         private void IssueBook_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "server=.; database=Library; integrated security=True";
+          
+
+            /*SqlConnection con = new SqlConnection();
+            con.ConnectionString = "server=DESKTOP-SIUDAKR\\SQLEXPRESS; database=Library; integrated security=True; TrustServerCertificate=true";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             con.Open();
 
-            cmd = new SqlCommand("Select Name from Books", con);
-            SqlDataReader Sdr = cmd.ExecuteReader();
+            cmd = new SqlCommand("select name from books", con);
+            SqlDataReader sdr = cmd.ExecuteReader();
 
-            while (Sdr.Read())
+            while (sdr.Read())
             {
-                for (int i = 0; i < Sdr.FieldCount; i++)
+                for (int i = 0; i < sdr.FieldCount; i++)
                 {
-                    comboBox1.Items.Add(Sdr.GetString(i));
+                    comboBox1.Items.Add(sdr.GetString(i));
                 }
             }
-            Sdr.Close();
-            con.Close();
+            sdr.Close();
+            con.Close();*/
 
 
 
@@ -88,6 +121,11 @@ namespace LibraryWinforms
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IssueBook_Load_2(object sender, EventArgs e)
         {
 
         }
