@@ -28,7 +28,7 @@ namespace LibraryWinforms
             {
                 comboBox1.Items.Add(name);
             }
-            
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace LibraryWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             LibraryBusiness libraryBusiness = new LibraryBusiness();
             int bookid = 0;
             string givenName = comboBox1.Text;
@@ -47,11 +47,11 @@ namespace LibraryWinforms
                 //var books = from b in db.Books
                 //            where b.Name.Equals(givenName)
                 //            select b;
-                          //  bookid = db.Books.FirstOrDefault(b => b.Name==givenName).Id;
-                            bookid = db.Books.FirstOrDefault(b => b.Name==givenName).Id;
-               
+                //  bookid = db.Books.FirstOrDefault(b => b.Name==givenName).Id;
+                bookid = db.Books.FirstOrDefault(b => b.Name == givenName).Id;
+
             }
-                
+
 
             int clientId = 0;
             string firstName = textBox3.Text;
@@ -65,7 +65,7 @@ namespace LibraryWinforms
             BorrowedBooks borrowedBook = new BorrowedBooks(bookid, borrowedOn, clientId);
             libraryBusiness.IssueBook(borrowedBook);
             MessageBox.Show("You got the book!!");
-            
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -85,7 +85,7 @@ namespace LibraryWinforms
 
         private void IssueBook_Load(object sender, EventArgs e)
         {
-          
+
 
             /*SqlConnection con = new SqlConnection();
             con.ConnectionString = "server=DESKTOP-SIUDAKR\\SQLEXPRESS; database=Library; integrated security=True; TrustServerCertificate=true";

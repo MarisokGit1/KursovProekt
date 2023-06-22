@@ -117,8 +117,20 @@ namespace LibraryWinforms.Business
                 }
             }
         }
-        
 
+        public void DeleteBorrowBook(int id)
+        {
+            using (dbContext = new LibraryDbContext())
+            {
+                var borrowedBooks = dbContext.BorrowedBooks.Find(id);
+                if (borrowedBooks != null)
+                {
+                    dbContext.BorrowedBooks.Remove(borrowedBooks);
+                    dbContext.SaveChanges();
+
+                }
+            }
+        }
 
     }
 }
