@@ -211,7 +211,7 @@
             this.Controls.Add(this.button2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CreateAClient";
-            this.Text = "CreateAClient";
+            this.Text = "Register";
             this.Load += new System.EventHandler(this.CreateAClient_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

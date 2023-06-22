@@ -13,7 +13,7 @@ namespace LibraryWinforms.Data
         protected override void OnConfiguring(DbContextOptionsBuilder
             optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-SIUDAKR\\SQLEXPRESS; Database=Library; " +
+            optionsBuilder.UseSqlServer("Server=.; Database=Library; " +
                 "Integrated Security=true; TrustServerCertificate=true;");
         }
         public LibraryDbContext()

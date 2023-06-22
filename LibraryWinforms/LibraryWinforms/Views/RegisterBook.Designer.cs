@@ -123,10 +123,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::LibraryWinforms.Properties.Resources.hqdefault1;
-            this.pictureBox1.Location = new System.Drawing.Point(192, 120);
+            this.pictureBox1.Image = global::LibraryWinforms.Properties.Resources.dance_cat;
+            this.pictureBox1.Location = new System.Drawing.Point(187, 142);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(435, 318);
+            this.pictureBox1.Size = new System.Drawing.Size(493, 394);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
