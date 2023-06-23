@@ -18,10 +18,11 @@ namespace LibraryWinforms.Data
         }
         public LibraryDbContext()
         {
-           this.Database.EnsureCreated();
+            this.Database.EnsureCreated();
         }
         public DbSet<Book> Books { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<BorrowedBooks> BorrowedBooks { get; set; }
+      
     }
 }

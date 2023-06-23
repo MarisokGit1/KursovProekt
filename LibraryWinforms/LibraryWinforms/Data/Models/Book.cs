@@ -23,5 +23,6 @@ namespace LibraryWinforms.Data.Models
         public DateTime FirstEdition { get; set; }
         public string Genre { get; set; }
         public virtual ICollection<BorrowedBooks> BorrowedBooks { get; set; }
+      
     }
 }

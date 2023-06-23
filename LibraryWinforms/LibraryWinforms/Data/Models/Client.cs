@@ -9,7 +9,7 @@ namespace LibraryWinforms.Data.Models
 {
     public class Client
     {
-        public Client(string firstName, string lastName, string email, int age,int phoneNumber , string password )
+        public Client(string firstName,string lastName,string email,int age,string phoneNumber ,string password )
         {
             
             FirstName = firstName;
@@ -25,9 +25,10 @@ namespace LibraryWinforms.Data.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         public int Age { get; set; }
         public string Password { get; set; }
         public virtual ICollection<BorrowedBooks> BorrowedBooks { get; set; }
+       
     }
 }

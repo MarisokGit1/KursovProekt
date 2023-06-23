@@ -51,10 +51,10 @@ namespace LibraryWinforms
             string firstName = textBox1.Text;
             string lastName = textBox2.Text;
             string email = textBox3.Text;
-            int phoneNum = int.Parse(textBox4.Text);
+            string phoneNum = textBox4.Text;
             int age = int.Parse(textBox5.Text);
             var password = textBox6.Text;
-            Client client = new Client(firstName, lastName, email, phoneNum, age, password);
+            Client client = new Client(firstName, lastName, email, age, phoneNum, password);
             libraryBusiness.AddClient(client);
             MessageBox.Show("The client was succsesfully added!");
 

@@ -68,5 +68,10 @@ namespace LibraryWinforms
         {
 
         }
+
+        private void MainMenu_Load_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

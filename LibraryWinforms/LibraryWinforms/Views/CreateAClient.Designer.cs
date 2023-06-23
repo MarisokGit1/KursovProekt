@@ -29,193 +29,192 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateAClient));
-            button2 = new Button();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            textBox3 = new TextBox();
-            label3 = new Label();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            textBox5 = new TextBox();
-            label5 = new Label();
-            textBox6 = new TextBox();
-            label6 = new Label();
-            pictureBox1 = new PictureBox();
-            label7 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // button2
             // 
-            button2.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = SystemColors.ControlText;
-            button2.Location = new Point(644, 383);
-            button2.Name = "button2";
-            button2.Size = new Size(107, 66);
-            button2.TabIndex = 1;
-            button2.Text = "Register";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.Location = new System.Drawing.Point(644, 383);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(107, 66);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Register";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(40, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(120, 22);
-            label1.TabIndex = 2;
-            label1.Text = "First name";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(40, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "First name";
             // 
             // textBox1
             // 
-            textBox1.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(229, 15);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(194, 30);
-            textBox1.TabIndex = 3;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(229, 15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 29);
+            this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            textBox2.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(229, 51);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(194, 30);
-            textBox2.TabIndex = 5;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Location = new System.Drawing.Point(229, 51);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(194, 29);
+            this.textBox2.TabIndex = 5;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(40, 91);
-            label2.Name = "label2";
-            label2.Size = new Size(76, 22);
-            label2.TabIndex = 4;
-            label2.Text = "E-mail";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(40, 91);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "E-mail";
             // 
             // textBox3
             // 
-            textBox3.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.Location = new Point(229, 88);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(194, 30);
-            textBox3.TabIndex = 7;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(229, 88);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(194, 29);
+            this.textBox3.TabIndex = 7;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(43, 59);
-            label3.Name = "label3";
-            label3.Size = new Size(109, 22);
-            label3.TabIndex = 6;
-            label3.Text = "Last name";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(43, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 24);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Last name";
             // 
             // textBox4
             // 
-            textBox4.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox4.Location = new Point(229, 125);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(194, 30);
-            textBox4.TabIndex = 9;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox4.Location = new System.Drawing.Point(229, 125);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(194, 29);
+            this.textBox4.TabIndex = 9;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(40, 128);
-            label4.Name = "label4";
-            label4.Size = new Size(142, 22);
-            label4.TabIndex = 8;
-            label4.Text = "Phone Number";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(40, 128);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(152, 24);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Phone Number";
             // 
             // textBox5
             // 
-            textBox5.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox5.Location = new Point(229, 161);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(194, 30);
-            textBox5.TabIndex = 11;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox5.Location = new System.Drawing.Point(229, 161);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(194, 29);
+            this.textBox5.TabIndex = 11;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(43, 161);
-            label5.Name = "label5";
-            label5.Size = new Size(43, 22);
-            label5.TabIndex = 10;
-            label5.Text = "Age";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(43, 161);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 24);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Age";
             // 
             // textBox6
             // 
-            textBox6.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox6.Location = new Point(229, 198);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(194, 30);
-            textBox6.TabIndex = 13;
-            textBox6.UseSystemPasswordChar = true;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox6.Location = new System.Drawing.Point(229, 198);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(194, 29);
+            this.textBox6.TabIndex = 13;
+            this.textBox6.UseSystemPasswordChar = true;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(40, 201);
-            label6.Name = "label6";
-            label6.Size = new Size(98, 22);
-            label6.TabIndex = 12;
-            label6.Text = "Password";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(40, 201);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 24);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Password";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(468, 23);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(496, 306);
-            pictureBox1.TabIndex = 14;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(468, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(496, 306);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Monospac821 BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(546, 332);
-            label7.Name = "label7";
-            label7.Size = new Size(351, 22);
-            label7.TabIndex = 15;
-            label7.Text = "You after you click this button";
-            label7.Click += label7_Click;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(546, 332);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(283, 24);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "You after you click this button";
             // 
             // CreateAClient
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.HotTrack;
-            ClientSize = new Size(1084, 461);
-            Controls.Add(label7);
-            Controls.Add(pictureBox1);
-            Controls.Add(textBox6);
-            Controls.Add(label6);
-            Controls.Add(textBox5);
-            Controls.Add(label5);
-            Controls.Add(textBox4);
-            Controls.Add(label4);
-            Controls.Add(textBox3);
-            Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Controls.Add(button2);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "CreateAClient";
-            Text = "Register";
-            Load += CreateAClient_Load_1;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(1084, 461);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "CreateAClient";
+            this.Text = "Register";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

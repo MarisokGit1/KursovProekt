@@ -29,91 +29,91 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IssueBook));
-            button1 = new Button();
-            textBox3 = new TextBox();
-            label1 = new Label();
-            label5 = new Label();
-            pictureBox1 = new PictureBox();
-            comboBox1 = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // button1
             // 
-            button1.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            button1.Location = new Point(184, 185);
-            button1.Name = "button1";
-            button1.Size = new Size(221, 81);
-            button1.TabIndex = 0;
-            button1.Text = "Issue book";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(184, 185);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(221, 81);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Issue book";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox3
             // 
-            textBox3.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textBox3.Location = new Point(193, 50);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(308, 33);
-            textBox3.TabIndex = 5;
+            this.textBox3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(193, 50);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(308, 33);
+            this.textBox3.TabIndex = 5;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(12, 108);
-            label1.Name = "label1";
-            label1.Size = new Size(109, 25);
-            label1.TabIndex = 6;
-            label1.Text = "Book name";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Book name";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label5.Location = new Point(12, 50);
-            label5.Name = "label5";
-            label5.Size = new Size(175, 25);
-            label5.TabIndex = 10;
-            label5.Text = "Client's First Name";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(12, 50);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(175, 25);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Client\'s First Name";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(553, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(526, 599);
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(553, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(526, 599);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // comboBox1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(174, 110);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(290, 23);
-            comboBox1.TabIndex = 12;
-            comboBox1.Click += IssueBook_Load;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(174, 110);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(290, 23);
+            this.comboBox1.TabIndex = 12;
             // 
             // IssueBook
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Tan;
-            ClientSize = new Size(1180, 631);
-            Controls.Add(comboBox1);
-            Controls.Add(pictureBox1);
-            Controls.Add(label5);
-            Controls.Add(label1);
-            Controls.Add(textBox3);
-            Controls.Add(button1);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "IssueBook";
-            Text = " Borrow Book";
-            Load += IssueBook_Load_2;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(1180, 631);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "IssueBook";
+            this.Text = " Borrow Book";
+            this.Load += new System.EventHandler(this.IssueBook_Load_3);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         private void IssueBook_Load1(object sender, EventArgs e)

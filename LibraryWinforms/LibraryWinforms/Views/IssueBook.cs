@@ -129,6 +129,11 @@ namespace LibraryWinforms
         {
 
         }
+
+        private void IssueBook_Load_3(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
