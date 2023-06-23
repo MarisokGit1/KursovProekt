@@ -54,7 +54,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(533, 183);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 23);
+            this.label1.Size = new System.Drawing.Size(264, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Welcome to Marin\'s Library ";
             // 
@@ -126,7 +126,7 @@
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.RosyBrown;
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1320, 557);
             this.Controls.Add(this.button5);

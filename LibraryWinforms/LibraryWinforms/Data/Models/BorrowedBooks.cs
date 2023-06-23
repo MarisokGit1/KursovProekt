@@ -21,9 +21,5 @@ namespace LibraryWinforms.Data.Models
         public int ClientId { get; set; }   
         public virtual Book Book { get; set; }
         public virtual Client Client { get; set; }
-      
-
-
-
     }
 }

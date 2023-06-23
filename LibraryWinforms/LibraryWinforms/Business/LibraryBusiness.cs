@@ -12,14 +12,7 @@ namespace LibraryWinforms.Business
     {
         private LibraryDbContext dbContext;
         //Create
-      /*  public void ReturnBook(ReturnedBook returnedBook)
-        {
-            using (dbContext = new LibraryDbContext())
-            {
-                dbContext.ReturnedBooks.Add(returnedBook);
-                dbContext.SaveChanges();
-            }
-        }*/
+      
         public void RegisterBook(Book book)
         {
             using (dbContext = new LibraryDbContext())
