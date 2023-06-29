@@ -1,8 +1,0 @@
-﻿Build started...
-1>------ Build started: Project: LibraryWinforms, Configuration: Debug Any CPU ------
-1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
-1>C:\Users\USER\Desktop\KursovProekt\LibraryWinforms\LibraryWinforms\Views\IssueBook.Designer.cs(127,25,127,33): warning CS0169: The field 'IssueBook.textBox2' is never used
-1>C:\Users\USER\Desktop\KursovProekt\LibraryWinforms\LibraryWinforms\Views\IssueBook.Designer.cs(130,23,130,29): warning CS0169: The field 'IssueBook.label4' is never used
-1>LibraryWinforms -> C:\Users\USER\Desktop\KursovProekt\LibraryWinforms\LibraryWinforms\bin\Debug\net6.0-windows\LibraryWinforms.dll
-1>Done building project "LibraryWinforms.csproj".
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
